@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aspire Technical Institute - Home</title>
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+/* BACKGROUND */
+body{
+    background: linear-gradient(to right, #dbeafe, #f0f9ff);
+}
+
+/* HEADER */
+header{
+    background:#0f172a;
+    padding:15px 0;
+    text-align:center;
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+/* NAVBAR */
+nav{
+    background:#1e293b;
+    padding:12px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* HERO SECTION */
+.hero{
+    width:80%;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.hero h2{
+    margin-bottom:10px;
+    color:#0f172a;
+}
+
+.hero p{
+    color:#555;
+}
+
+/* CARDS */
+.container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#e0f2fe;
+    padding:20px;
+    border-radius:10px;
+    width:250px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    background:#bae6fd;
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#0f172a;
+    margin-bottom:10px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    margin-top:20px;
+    padding:15px;
+    color:#555;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    Aspire Technical Institute
+</header>
+
+<nav>
+    <a href="index1.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="admission.html">Admission</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="hero">
+    <h2>Welcome to Aspire Technical Institute</h2>
+    <p>We provide quality computer education and skill development courses.</p>
+</section>
+
+<section class="container">
+    <div class="card">
+        <h3>Experienced Faculty</h3>
+        <p>Learn from industry professionals with real-world experience.</p>
+    </div>
+
+    <div class="card">
+        <h3>Government Courses</h3>
+        <p>Recognized certifications that add value to your career.</p>
+    </div>
+
+    <div class="card">
+        <h3>Practical Training</h3>
+        <p>Hands-on learning with real projects and labs.</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Aspire Technical Institute
+</footer>
+
+</body>
+</html>

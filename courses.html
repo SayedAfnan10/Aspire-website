@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courses - Aspire Technical Institute</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #0b1320, #111c2e);
+    color:#e5e7eb;
+}
+
+/* HEADER */
+header{
+    background:#0b1320;
+    padding:15px 0;
+    text-align:center;
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    border-bottom:2px solid #d4af37;
+}
+
+/* NAVBAR */
+nav{
+    background:#111c2e;
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid rgba(212,175,55,0.2);
+}
+
+nav a{
+    color:#e5e7eb;
+    text-decoration:none;
+    margin:0 12px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+/* CONTAINER */
+.container{
+    width:80%;
+    margin:40px auto;
+    background:#111c2e;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 0 20px rgba(212,175,55,0.1);
+    border:1px solid rgba(212,175,55,0.2);
+}
+
+/* TITLE */
+h1{
+    margin-bottom:20px;
+    color:#ffffff;
+}
+
+/* COURSE ITEM */
+.course{
+    background:#0b1320;
+    margin:12px 0;
+    padding:15px;
+    border-radius:8px;
+    transition:0.3s;
+    border:1px solid rgba(212,175,55,0.15);
+}
+
+.course:hover{
+    transform:translateX(10px);
+    border-color:#d4af37;
+    box-shadow:0 0 10px rgba(212,175,55,0.2);
+}
+
+/* COURSE TITLE */
+.course h3{
+    color:#d4af37;
+}
+
+/* BUTTON */
+button{
+    margin-top:10px;
+    padding:8px 15px;
+    border:none;
+    background:#d4af37;
+    color:#0b1320;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#f5d76e;
+}
+
+/* FOOTER */
+footer{
+    background:#0b1320;
+    color:#cbd5e1;
+    display:flex;
+    justify-content:space-between;
+    padding:15px 30px;
+    margin-top:30px;
+    border-top:2px solid #d4af37;
+}
+
+footer a{
+    color:#d4af37;
+    text-decoration:none;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    Aspire Technical Institute
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="admission.html">Admission</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+    <h1>Our Courses</h1>
+
+    <div class="course">
+        <h3>Computer Diploma</h3>
+        <button onclick="location.href='computer diploma.html'">Know More</button>
+    </div>
+
+    <div class="course">
+        <h3>Python Programming</h3>
+        <button onclick="location.href='python programming.html'">Know More</button>
+    </div>
+
+    <div class="course">
+        <h3>Tally Prime</h3>
+        <button onclick="location.href='tally prime.html'">Know More</button>
+    </div>
+
+    <div class="course">
+        <h3>Web Designing (HTML)</h3>
+        <button onclick="location.href='web designing .html'">Know More</button>
+    </div>
+
+    <div class="course">
+        <h3>Cyber Security Basics</h3>
+        <button onclick="location.href='cyber basic.html'">Know More</button>
+    </div>
+
+</div>
+
+<footer>
+    <div>
+        © 2026 Aspire Technical Institute
+    </div>
+
+    <div>
+        Developed by <strong>SAYED AFNAN</strong> |
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aspire Technical Institute</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #0b1320, #111c2e);
+    color:#e5e7eb;
+}
+
+/* HEADER */
+header{
+    background:#0b1320;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:2px solid #d4af37;
+}
+
+.logo{
+    font-size:26px;
+    font-weight:bold;
+    color:white;
+}
+
+.logo span{
+    color:#d4af37; /* GOLD A */
+    font-size:34px;
+}
+
+/* NAV */
+nav a{
+    color:#e5e7eb;
+    text-decoration:none;
+    margin:0 10px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+/* HERO */
+.hero{
+    width:85%;
+    margin:50px auto;
+    background:#111c2e;
+    padding:40px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 0 20px rgba(212,175,55,0.15);
+    border:1px solid rgba(212,175,55,0.2);
+}
+
+.hero h2{
+    font-size:28px;
+    color:#ffffff;
+}
+
+.hero p{
+    margin-top:10px;
+    color:#cbd5e1;
+}
+
+/* BUTTON */
+button{
+    margin-top:20px;
+    padding:10px 20px;
+    background:#d4af37;
+    color:#0b1320;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+button:hover{
+    background:#f5d76e;
+}
+
+/* CARDS */
+.container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#111c2e;
+    padding:25px;
+    border-radius:10px;
+    width:260px;
+    text-align:center;
+    transition:0.3s;
+    border:1px solid rgba(212,175,55,0.2);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#d4af37;
+}
+
+.card h3{
+    color:#d4af37;
+    margin-bottom:10px;
+}
+
+/* FOOTER */
+footer{
+    background:#0b1320;
+    color:#cbd5e1;
+    display:flex;
+    justify-content:space-between;
+    padding:15px 30px;
+    margin-top:30px;
+    border-top:2px solid #d4af37;
+}
+
+footer a{
+    color:#d4af37;
+    text-decoration:none;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+.call-btn{
+    background:#d4af37;
+    color:#0b1320;
+    padding:8px 14px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-left:15px;
+    transition:0.3s;
+}
+
+.call-btn:hover{
+    background:#f5d76e;
+    transform:scale(1.05);
+}
+.founder{
+    width:85%;
+    margin:30px auto;
+    background:#111c2e;
+    padding:30px;
+    border-radius:12px;
+    border:1px solid rgba(212,175,55,0.2);
+    box-shadow:0 0 15px rgba(212,175,55,0.1);
+    text-align:center;
+}
+
+.founder h2{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.founder-box{
+    background:#0b1320;
+    padding:20px;
+    border-radius:10px;
+    border:1px solid rgba(212,175,55,0.2);
+}
+
+.founder-box h3{
+    color:#ffffff;
+    margin-bottom:10px;
+}
+
+.founder-box p{
+    color:#cbd5e1;
+    line-height:1.6;
+    margin:10px 0;
+}
+.founder-btn{
+    margin-top:15px;
+    padding:10px 18px;
+    background:#d4af37;
+    color:#0b1320;
+    border:none;
+    border-radius:6px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.founder-btn:hover{
+    background:#f5d76e;
+    transform:scale(1.05);
+}
+.faculty{
+    width:85%;
+    margin:30px auto;
+    background:#111c2e;
+    padding:30px;
+    border-radius:12px;
+    border:1px solid rgba(212,175,55,0.2);
+    box-shadow:0 0 15px rgba(212,175,55,0.1);
+    text-align:center;
+}
+
+.faculty h2{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.faculty-box{
+    background:#0b1320;
+    padding:20px;
+    border-radius:10px;
+    border:1px solid rgba(212,175,55,0.2);
+}
+
+.faculty-box h3{
+    color:#ffffff;
+    margin-bottom:10px;
+}
+
+.faculty-box p{
+    color:#cbd5e1;
+    line-height:1.6;
+    margin:10px 0;
+}
+.faculty-btn{
+    margin-top:15px;
+    padding:10px 18px;
+    background:#d4af37;
+    color:#0b1320;
+    border:none;
+    border-radius:6px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.faculty-btn:hover{
+    background:#f5d76e;
+    transform:scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <span>A</span>spire Technical Institute
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="admission.html">Admission</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+<section class="hero">
+    <h2>Welcome to Aspire Technical Institute</h2>
+    <p>We provide quality computer education and skill development courses.</p>
+    <button onclick="location.href='courses.html'">Explore Courses</button>
+</section>
+
+<section class="container">
+    <div class="card">
+        <h3>Experienced Faculty</h3>
+        <p>Learn from industry professionals with real-world experience.</p>
+    </div>
+
+    <div class="card">
+        <h3>Government Courses</h3>
+        <p>Recognized certifications that add value to your career.</p>
+    </div>
+
+    <div class="card">
+        <h3>Practical Training</h3>
+        <p>Hands-on learning with real projects and labs.</p>
+    </div>
+</section>
+<section class="founder">
+
+    <h2>Founder & Visionary Leader</h2>
+
+    <div class="founder-box">
+
+        <h3>👨‍🏫 Mr. Shafi Sir</h3>
+
+        <p>
+            The Aspire Technical Institute was founded with a vision to provide
+            quality computer education to students in rural and urban areas.
+            Our founder believes that practical skills are more powerful than
+            theoretical knowledge alone.
+        </p>
+
+        <p>
+            Under his leadership, the institute focuses on skill development,
+            job-oriented training, and affordable education for all students.
+        </p>
+<button class="founder-btn" onclick="location.href='shafi sir.html'">
+    👤 Know More About Him
+</button>
+    </div>
+
+</section>
+<section class="faculty">
+
+    <h2>Our Faculty</h2>
+
+    <div class="faculty-box">
+
+        <h3> Mr. Khaja Sir</h3>
+
+        <p>
+           Our faculty at Aspire Technical Institute is composed of highly skilled and dedicated educators who bring both academic knowledge and real-world industry experience into the classroom. Each instructor is carefully selected based on their expertise in computer education, programming, and professional training.
+
+.
+        </p>
+
+        <p>
+          They focus on building strong conceptual understanding along with practical skills, ensuring that every student becomes confident and job-ready. With a student-friendly teaching approach, our faculty members guide learners step-by-step, making even complex topics easy to understand
+        </p>
+<button class="faculty-btn" onclick="location.href='khaja sir.html'">
+    👤 Know More About Him
+</button>
+    </div>
+<a href="tel:+919876543210" class="call-btn">📞 Call Us</a>
+<footer>
+    <div>
+        © 2026 Aspire Technical Institute
+    </div>
+
+    <div>
+        Developed by <strong>SAYED AFNAN</strong> |<BR>
+        student of CABA-MDTP (2025 BATCH)
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+    </div>
+</footer>
+
+</body>
+</html>
